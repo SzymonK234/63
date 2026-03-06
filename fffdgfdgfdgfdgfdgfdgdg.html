@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+</head>
+
+<body onload="marka()">
+
+<div id="blok1"></div>
+
+<script>
+
+let con = document.getElementById("blok1");
+
+let gitary = [
+"Gibson Les Paul",
+"Fender Stratocaster",
+"Ibanez RG",
+"PRS Custom 24",
+"Yamaha Pacifica"
+];
+
+function marka(){
+
+gitary.push("Jackson Soloist");
+
+gitary.unshift("ESP Eclipse");
+
+gitary.pop();
+
+for(let i = 0; i < gitary.length; i++){
+con.innerHTML += `<p>${gitary[i]}</p>`;
+}
+
+}
+
+</script>
+
+</body>
+</html>
